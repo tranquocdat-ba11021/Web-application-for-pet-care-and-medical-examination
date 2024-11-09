@@ -1,0 +1,85 @@
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+}
+.star {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+}
+.star-rating input[type="radio"] {
+    display: none;
+}
+.star:hover,
+.star:hover ~ .star,
+.star-rating input[type="radio"]:checked ~ label {
+    color: #f5c518;
+}
+
+.checked {
+    color: orange;
+}
+
+.rating-stars {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rating-stars .fa {
+    font-size: 2rem; /* Kích thước sao */
+    margin: 0 2px;
+    color: #ffd700; /* Màu vàng cho các sao */
+}
+
+.rating-stars .fa-star.checked {
+    color: #ffd700; /* Màu vàng cho các sao được đánh dấu */
+}
+
+
+
+
+
+.rating-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.rating-content {
+    margin-left: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.rating-stars .fa-star {
+    color: #f39c12;
+}
+
+.rating-stars .fa-star.checked {
+    color: #f39c12;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.service-info {
+    padding: 15px;
+}

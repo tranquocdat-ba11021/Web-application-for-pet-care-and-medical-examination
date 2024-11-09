@@ -1,0 +1,102 @@
+
+/* Loại bỏ gạch chân từ các liên kết trong fc-scrollgrid-sync-inner */
+.fc-scrollgrid-sync-inner a {
+    text-decoration: none ; /* Loại bỏ gạch chân */
+}
+/* Loại bỏ dấu chấm từ các sự kiện có lớp fc-daygrid-event-dot */
+.fc-daygrid-event-dot {
+    display: none; /* Hoặc sử dụng visibility: hidden; nếu bạn chỉ muốn ẩn mà không thay đổi bố cục */
+}
+
+/* Đổi màu chữ của tiêu đề sự kiện */
+.fc-event-title {
+    color: #808080 !important; /* Màu chữ xám */
+}
+/* Đổi màu chữ của các ngày trong lịch */
+.fc-daygrid-day-number {
+    color: #808080 !important; /* Màu chữ xám */
+}
+
+/* Đổi màu chữ của tiêu đề cột (như các ngày trong tuần) */
+.fc-col-header-cell-cushion {
+    color: #808080 !important; /* Màu chữ xám */
+}
+
+/* Thay đổi màu nền của các sự kiện */
+.fc-event {
+    background-color: #f0f0f0 !important; /* Màu nền nhạt */
+    color: #808080 !important; /* Màu chữ xám */
+}
+
+/* Đối với các phần tử trong bảng, nếu cần */
+.fc .fc-daygrid-day {
+    background-color: #ffffff !important; /* Màu nền trắng */
+}
+
+/* Đối với các tiêu đề của cột trong lịch */
+.fc-col-header-cell {
+    background-color: #f5f5f5 !important; /* Màu nền nhẹ cho tiêu đề cột */
+    color: #808080 !important; /* Màu chữ xám */
+}
+/* Loại bỏ dấu chấm từ sự kiện */
+.fc-daygrid-event-dot {
+    display: none; /* Ẩn dấu chấm */
+}
+
+/* Cải thiện kiểu dáng cho các sự kiện */
+.fc-daygrid-event {
+    border: none; /* Loại bỏ đường viền nếu có */
+    background-color: inherit; /* Đặt nền sự kiện về mặc định nếu có */
+}
+
+/* Nếu sự kiện vẫn hiển thị không như mong đợi, áp dụng các kiểu sau */
+.fc-daygrid-event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Cắt gọn nội dung sự kiện với dấu ba chấm */
+.fc-daygrid-event-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap; /* Đặt chữ trên một dòng */
+    overflow: hidden; /* Ẩn phần nội dung thừa */
+    text-overflow: ellipsis; /* Thêm dấu ba chấm khi nội dung dài */
+    max-width: 150px; /* Điều chỉnh chiều rộng tối đa cho phù hợp */
+}
+
+/* Để hiển thị nội dung nổi bật hơn, có thể thêm một số kiểu */
+.fc-daygrid-event {
+    padding: 5px;
+    border-radius: 4px;
+}
+/* Định dạng pop-up sự kiện */
+.event-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* Định dạng nút đóng trong pop-up */
+.event-popup button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.event-popup button:hover {
+    background-color: #0056b3;
+}

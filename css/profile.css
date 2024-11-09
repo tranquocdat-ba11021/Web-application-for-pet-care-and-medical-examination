@@ -1,0 +1,96 @@
+/* Sidebar styles */
+.d_sidebar {
+    width: 250px;
+    min-height: 400px;
+    padding: 20px;
+    margin: 0; /* Remove right margin */
+    border-right: 1px solid #ddd; /* Optional: Add border to separate sidebar and content */
+}
+
+/* Sidebar links */
+.d_sidebar a {
+    display: block;
+    padding: 18px;
+    color: #495057;
+    text-decoration: none;
+}
+
+.d_sidebar a:hover {
+    background-color: #e9ecef;
+}
+
+/* Main content styles */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    margin: 0;
+    align-items: center; /* Center content horizontally */
+}
+
+
+
+.btn-primary {
+    background-color: green !important;
+}
+
+
+
+.rounded-circle {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.file-input {
+    position: relative;
+    overflow: hidden;
+}
+.file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+.d_btn {
+    padding: 0.25rem 0.5rem; /* Giảm kích thước padding */
+    font-size: 0.875rem; /* Giảm kích thước font chữ */
+    line-height: 1.25; /* Giảm chiều cao dòng */
+    border-radius: 0.2rem; /* Giảm bán kính bo tròn của nút */
+    text-transform: none; /* Chữ thường */
+    font-weight: 100;
+}
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar .nav-link i {
+    margin-right: 8px;
+}
+
+.sidebar .nav-link .bx-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+.sidebar .collapse {
+    margin-left: 20px;
+}
+
+.sidebar .collapse.show {
+    display: block;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+}
+

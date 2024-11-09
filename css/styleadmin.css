@@ -1,0 +1,304 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #343a40;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #343a40;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+
+
+/* #sidebar ul li.active > a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+} */
+
+/* a[data-toggle="collapse"] {
+  position: relative;
+} */
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+  display: block;
+  position: absolute;
+  right: 20px;
+  font-family: 'Glyphicons Halflings';
+  font-size: 0.6em;
+}
+
+
+#content2 {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 20px;
+  border-radius: 10px 10px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-body {
+  background: #fff;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.list-group-item img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.table thead th {
+  border-bottom: 2px solid #eee;
+}
+
+.table tbody td {
+  border-top: none;
+}
+
+#stickyNavbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-nav.ml-auto {
+  margin-left: auto;
+}
+
+
+/* Đổi màu nền thành màu xám trong suốt khi hover */
+#sidebar ul.components li a.nav-link:hover {
+  background-color: rgba(128, 128, 128, 0.5); /* Màu xám với độ trong suốt 50% */
+  color: #fff; /* Màu chữ vẫn là màu trắng */
+}
+
+/* Đổi màu nền thành màu xám trong suốt cho các dropdown khi hover */
+#sidebar ul ul li a.nav-link:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+  color: #fff;
+}
+/* ------------------------ */
+.nav-link.d-flex.justify-content-between {
+  justify-content: flex-start !important;
+}
+
+.nav-link i:first-child {
+  margin-right: 8px; /* Khoảng cách giữa icon và chữ */
+}
+
+.nav-link i:last-child {
+  margin-left: auto; /* Đẩy icon chevron về phía cuối */
+}
+
+/* ------------------------- */
+/* profile */
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.profile-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.profile-info img {
+  margin-bottom: 20px;
+  border-radius: 50%;
+  max-width: 150px;
+  align-self: center;
+}
+.profile-info label {
+  font-weight: bold;
+}
+.profile-info input[type="text"], 
+.profile-info textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.profile-info button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.profile-info button:hover {
+  background-color: #0056b3;
+}
+.header-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Sidebar styles */
+.d_sidebar {
+  width: 250px;
+  min-height: 400px;
+  padding: 20px;
+  margin: 0; /* Remove right margin */
+  border-right: 1px solid #ddd; /* Optional: Add border to separate sidebar and content */
+}
+
+/* Sidebar links */
+.d_sidebar a {
+  display: block;
+  padding: 18px;
+  color: #495057;
+  text-decoration: none;
+}
+
+.d_sidebar a:hover {
+  background-color: #e9ecef;
+}
+
+/* Main content styles */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin: 0;
+  align-items: center; /* Center content horizontally */
+}
+
+
+
+
+
+
+.rounded-circle {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.file-input {
+  position: relative;
+  overflow: hidden;
+}
+.file-input input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+
+.d_btn {
+  padding: 0.25rem 0.5rem; /* Giảm kích thước padding */
+  font-size: 0.875rem; /* Giảm kích thước font chữ */
+  line-height: 1.25; /* Giảm chiều cao dòng */
+  border-radius: 0.2rem; /* Giảm bán kính bo tròn của nút */
+  text-transform: none; /* Chữ thường */
+  font-weight: 100;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar .nav-link i {
+  margin-right: 8px;
+}
+
+.sidebar .nav-link .bx-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+.sidebar .collapse {
+  margin-left: 20px;
+}
+
+.sidebar .collapse.show {
+  display: block;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* CSS riêng cho email với tên class mới */
+.custom-email {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+.rounded-circle {
+  border-radius: 50%;
+  object-fit: cover;
+}

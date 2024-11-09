@@ -1,0 +1,40 @@
+.related-service-wrap {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hiệu ứng bóng */
+    border: 2px solid white; /* Viền trắng */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+.btn-success {
+    background-color: #28a745; /* Màu nền của nút (màu xanh lá cây) */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 20px; /* Khoảng cách giữa viền và chữ */
+    border: 2px solid white; /* Viền trắng cho nút */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+    display: block; /* Để nút button chiếm hết chiều rộng của cha nó */
+    width: 100%; /* Nút button sẽ rộng hết phần tử chứa nó */
+    text-align: center; /* Căn giữa nội dung nút button */
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của thẻ <a> */
+    margin-top: 20px; /* Khoảng cách từ nút lên phần trên */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Màu nền khi di chuột qua */
+}
+
+.related-service-wrap h2 {
+    font-size: 1rem; /* Kích thước chữ */
+    font-weight: normal; /* Không in đậm */
+    margin-bottom: 5px; /* Khoảng cách dưới */
+}
+
+
+.from-text {
+    font-size: 0.8rem; /* Kích thước chữ "From" */
+}
+
+.vnd-text {
+    font-size: 1.2rem; /* Kích thước chữ "VNĐ" */
+    font-weight: bold; /* In đậm */
+}

@@ -1,0 +1,1280 @@
+/* text uppcase la de in hoa */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+body {
+    font-family: "Barlow", sans-serif;
+    line-height: 1.7;
+    color: #333;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700 !important;
+    color: grey;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    /* loại bỏ gạch chân ở dưới */
+    transition: all 0.4s ease;
+}
+
+image {
+    width: 100%;
+    
+}
+
+a:hover{
+    color:#00b383
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center !important; 
+}
+
+.intro{
+    margin-bottom: 40px;
+}
+
+.intro h6{
+    font-weight: 400;
+    color: #333;
+}
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+/* NAVBAR */
+.top-nav {
+  position: relative;
+  background-color: rgb(203, 219, 203);
+  padding: 5px 0;
+}
+
+.top-nav p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 26px;
+}
+
+.top-nav i,
+.top-nav span {
+    vertical-align: middle;
+}
+
+.social-links a {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #3a8776;
+    font-size: 22px;
+    border-radius: 100%;
+    background-color: rgba(237, 226, 226, 0.3)
+}
+
+
+.social-links a:hover {
+    background-color: #789ea4;
+    color: #3a3a3a;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Login */
+.wrapper{
+  border-top: 3px solid green;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+.navbar {
+    height: 80px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+.navbar-brand{
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+.login-button {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-right: 10px
+}
+.Register-button {
+  background-color: #009970;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #00b383;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* .hero-section{
+        background: url(../image/cat-dog.jpg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+} */
+/* ---------------------------------------------------------------------------------Slider------------------------------------------ */
+/* #hero-slider{
+    font-weight: 700 !important;
+} */
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(9, 32, 50, 0.4); /* Màu nền phủ lên */
+  z-index: 1;
+}
+
+.slide-content {
+  position: relative;
+  z-index: 2;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+
+/*----------------------------------------------------OWL CAROUSEL----------------------------------------------------*/
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    display: grid;
+    place-items: center;
+    background-color:rgba(255, 255, 255, 0.3) !important;
+    font-size: 30px !important;
+    margin-top: -30px !important;
+    border-radius: 100px !important;
+}   
+
+
+.owl-prev{
+    left: 0;
+}
+.owl-next{
+    right: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* inforbox */
+.ainfo-box{
+    display: flex;
+    align-items: center;
+}
+.ainfo-box img{
+    width: 200px;
+    margin-right: 24px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* MILESONE */
+#milestone{
+background-image:linear-gradient(rgba(169, 195, 169, 0.7),rgba(169, 195, 169, 0.7)), url(../image/h5.jpg);
+}
+
+#milestone .display-4,
+#milestone p{
+    color: #fff;
+}
+
+#milestone .display-4{
+    font-weight: 600;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+/* dich vu */
+.service-box{
+    padding: 32px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    text-align:center ;
+}
+
+.service-box img{
+    width: 100px;
+}
+
+.service-box h5{
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------------------- */
+/* footer */
+.footer {
+  color: grey;
+  background: url("../image/nice.jpg") top center no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  padding: 80px 0 60px 0;
+  position: relative;
+}
+
+.footer:before {
+  content: "";
+  background: rgb(203, 219, 203);
+  position: absolute;
+  inset: 0;
+}
+
+.footer .footer-content .footer-info {
+  margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer .footer-content .footer-info h3 span {
+  color: var(--color-primary);
+}
+
+.footer .footer-content .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: var(--font-primary);
+  color: grey;
+}
+
+.footer .footer-content .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: grey;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .footer-content .social-links a:hover {
+  background: var(--color-primary);
+  text-decoration: none;
+}
+
+.footer .footer-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: grey;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-content .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-content .footer-links ul li {
+  padding: 8px 0;
+}
+
+.footer .footer-content .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-content .footer-links ul a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-content .footer-links ul a:hover {
+  color: grey;
+}
+
+.footer .footer-content .map-container {
+  margin-bottom: 30px;
+}
+
+.footer .footer-content .map-container iframe {
+  border: none;
+  border-radius: 8px;
+}
+
+.footer .footer-legal .copyright {
+  padding-top: 30px;
+  border-top: 1px solid ;
+}
+
+.footer .footer-legal .credits {
+  padding-top: 4px;
+  font-size: 13px;
+  color:grey;
+}
+
+.footer .footer-legal .credits a {
+  color: var(--color-primary);
+}
+
+.footer .footer-content .footer-links ul a {
+  color: black; /* Set text color to black */
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-content .footer-links ul a:hover {
+  color: grey; /* Optional: Change hover color to grey */
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* new details */
+
+  .blog .blog-details {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+  }
+  .blog .blog-details .content blockquote p {
+    color: var(--color-default);
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .blog .blog-details .content blockquote {
+    overflow: hidden;
+    background-color: rgba(82, 86, 94, 0.06);
+    padding: 60px;
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* -------------------------------------------------------------------- */
+
+/*** About Start ***/
+/*** About Start ***/
+.about .about-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Ensure it spans the full width of the column */
+  height: auto; /* Adjust height to fit content */
+}
+
+.about .about-img img:first-of-type {
+  width: 100%; /* Make sure the first image spans the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container area */
+}
+
+.about .about-img .about-img-inner {
+  position: absolute;
+  left: 10px; /* Adjust position from the left edge */
+  bottom: 10px; /* Adjust position from the bottom edge */
+  width: 200px; /* Adjust size */
+  height: 200px; /* Adjust size */
+  border: 5px solid var(--bs-white); /* Border size */
+  border-radius: 50%; /* Circular shape */
+  overflow: hidden;
+  z-index: 1; /* Ensure it's on top of the first image */
+}
+
+.about .about-img .about-img-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+  /*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    padding: 20px 0 30px 0;
+  }
+  
+  .contact .info-item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    color: #009970;
+    border-radius: 50%;
+    border: 2px dotted #009970;
+  }
+  
+  .contact .info-item h3 {
+    font-size: 20px;
+    color: #6c757d;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .contact .info-item p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .contact .php-email-form {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+  }
+  
+  .contact .php-email-form .form-group {
+    padding-bottom: 20px;
+  }
+  
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #df1529;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+  }
+  
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #009970;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #059652;
+    border-top-color: #fff;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .contact .php-email-form input:focus,
+  .contact .php-email-form textarea:focus {
+    border-color: var(--color-primary);
+  }
+  
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+  .contact .php-email-form button[type=submit] {
+    background: #009970;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+    background: rgba(199, 207, 199, 0.8);
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* ------------------------------------------------------------------------ */
+  /* pguc vu */
+  .blog-section {
+    padding: 3rem 0 12rem 0; }
+    .blog-section .post-entry a {
+      text-decoration: none; }
+    .blog-section .post-entry .post-thumbnail {
+      display: block;
+      margin-bottom: 20px; }
+      .blog-section .post-entry .post-thumbnail img {
+        border-radius: 20px;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease; }
+    .blog-section .post-entry .post-content-entry {
+      padding-left: 15px;
+      padding-right: 15px; }
+      .blog-section .post-entry .post-content-entry h3 {
+        font-size: 16px;
+        margin-bottom: 0;
+        font-weight: 600;
+        margin-bottom: 7px; }
+      .blog-section .post-entry .post-content-entry .meta {
+        font-size: 14px; }
+        .blog-section .post-entry .post-content-entry .meta a {
+          font-weight: 600; }
+    .blog-section .post-entry:hover .post-thumbnail img, .blog-section .post-entry:focus .post-thumbnail img {
+      opacity: .7; }
+
+
+/* ---------------------------------------------------------------------------------------------------------
+SERVICE 2 */
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: .75rem 2rem;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: all .35s ease;
+}
+.btn-round-full {
+  border-radius: 50px;
+}
+
+.divider {
+  width: 40px;
+  height: 5px;
+  background: #059652;
+}
+.btn-main-2 {
+  background: #059652;
+  color: #fff;
+  border-color: #059652;
+}
+
+.doctor-social-links i {
+  font-size: 2em; /* hoặc bất kỳ kích thước nào bạn muốn */
+}
+
+
+/* --------------------------------------------------------------------------------- */
+/* dich vu 3 */
+  #appointment {
+    padding-top: 100px;
+  }
+
+#appointment label {
+  color: #393939;
+  font-weight: 500;
+}
+
+#appointment .form-control {
+  background: #f9f9f9;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  transition: all ease-in-out 0.4s;
+}
+
+#appointment input,
+#appointment select {
+  height: 45px;
+}
+
+#appointment button#cf-submit {
+  background: #009970;
+  color: #ffffff;
+  font-weight: 600;
+  height: 55px;
+}
+
+#appointment button#cf-submit:hover {
+  background: #393939;
+  color: #ffffff;
+}
+
+/* Đảm bảo rằng cả hai cột có margin dưới */
+.col-md-6,
+.col-sm-12 {
+    margin-bottom: 15px; /* hoặc bất kỳ giá trị margin phù hợp nào khác */
+}
+
+/* Giới hạn chiều rộng tối đa của ảnh */
+.img-responsive {
+    max-width: 100%; /* hoặc bất kỳ giá trị nào khác phù hợp */
+    height: auto;
+}
+
+
+/* ================================================================================== */
+/* card kham benh */
+
+/* ========================================= */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a.active {
+  background-color: #28a745 !important; /* Màu xanh lá cây */
+  color: white !important; /* Màu chữ trắng */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================================= */
+.dropdown-menu {
+  z-index: 2;
+}
+
+
+
+
+/* =================================================================================== */
+/* about uss/ */
+.feature-item {
+  position: relative;
+  display: flex;
+  border: 1px solid green ;
+  border-radius: 10px;
+  background: white;
+ /* .feature transition: 0.5s; */
+
+}
+
+.feature .feature-item::before {
+  width: 0;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.feature .feature-item:hover::before {
+  width: 100%;
+  background: rgb(71, 111, 71);
+}
+
+.feature .feature-item .feature-icon {
+  display: inline-flex;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.feature .feature-item:hover .feature-icon {
+  position: relative;
+  z-index: 2;
+}
+
+.feature .feature-item:hover .feature-content {
+  position: relative;
+  color: var(--bs-white);
+  z-index: 2;
+}
+
+.feature .feature-item:hover .feature-content h5 {
+  color: var(--bs-dark);
+}
+
+
+.sub-title {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.sub-title::before {
+  content: "";
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-top: 8px;
+  margin-right: -100px;
+  border: 1px solid;
+}
+
+.sub-title::after {
+  content: "";
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-bottom: 8px;
+  margin-right: -50px;
+  border: 1px solid ;
+}
+/* ------------------------ */
+/* if4 box */
+/* Add border and shadow to the form input section */
+.info-block {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Add some padding inside the border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  background-color: #fff; /* White background color */
+  margin-bottom: 20px; /* Add some space below the block */
+}
+
+/* Optional: Add some spacing and a border to the form controls */
+.form-control {
+  border: 1px solid #ccc; /* Border color for form fields */
+  border-radius: 4px; /* Rounded corners for form fields */
+  padding: 10px; /* Padding inside form fields */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Inner shadow for input fields */
+}
+/* --------------------------------------------------------------------------------------------
+ */
+/* Doctor Information Section */
+/* Style for the container of image and doctor info */
+.doctor-info-container {
+  border: 1px solid #ddd; /* Add border */
+  padding: 20px; /* Add padding inside the border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Style for doctor image container */
+.doctor-image-container {
+  flex: 0 0 auto; /* Prevent the image from growing too large */
+  margin-right: 15px; /* Adjust margin between image and text */
+}
+
+/* Style for doctor image */
+.doctor-image {
+  max-width: 120px; /* Adjust size of the doctor's image */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Style for doctor info section */
+.doctor-info {
+  flex: 1; /* Allow info to take up remaining space */
+  text-align: left; /* Align text to the left */
+}
+
+/* Make the form section wider */
+.info-block {
+  border: 1px solid #ddd; /* Add border */
+  padding: 20px; /* Add padding inside the border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .doctor-info-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .doctor-image-container {
+      margin-right: 0; /* Remove margin on smaller screens */
+      margin-bottom: 15px; /* Add margin below the image */
+  }
+
+  .doctor-image {
+      max-width: 100px; /* Adjust image size for smaller screens */
+  }
+}
+
+.doctor-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-image {
+  width: 120px; /* Adjust size as needed */
+  height: 120px; /* Should match width to keep it circular */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the container */
+  border: 2px solid #ddd; /* Optional: adds a border around the image */
+}
+/* =-0------------------------ */
+
+.team-member {
+  position: relative;
+  display: inline-block;
+}
+
+.social-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hide the social links */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  display: flex;
+  gap: 10px; /* Space between icons */
+}
+
+.social-links a {
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Size of the icons */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.team-member:hover .social-links {
+  opacity: 1; /* Show the social links when hovered */
+}
+
+.team-img {
+  width: 250px; /* Adjust the width to make the images larger */
+  height: 290px; /* Ensure the height matches the width to make the images square */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border: 3px solid #ddd; /* Add a border with a light gray color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect for depth */
+  border-radius: 15px; /* Make the corners rounded */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow effect */
+}
+
+.team-img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow effect on hover */
+}
+
+
+
+.custom-social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 0; /* Ensure the icons are aligned at the bottom */
+}
+
+.custom-social-links a {
+  color: #000; /* Example color */
+  font-size: 24px; /* Icon size */
+  text-decoration: none;
+}
+
+.custom-social-links a:hover {
+  color: #779d7d; /* Hover color */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  transition: transform 0.3s ease;
+}
+
+.col-auto.d-flex.align-items-end {
+  display: flex;
+  align-items: flex-end; /* Align to the bottom of the container */
+  justify-content: flex-end; /* Align to the right */
+}
+
+
+/* ---------------------------- */
+/* Định dạng khung bài viết */
+.news-post-item {
+  display: flex; /* Sử dụng Flexbox */
+  flex-direction: column; /* Xếp các phần tử theo cột */
+  border: 1px solid #ddd; /* Khung cho bài viết */
+  border-radius: 10px; /* Bo góc */
+  overflow: hidden; /* Ẩn phần tràn ra ngoài */
+  background-color: #fff; /* Nền trắng */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tạo bóng cho khung */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+/* Định dạng hình ảnh */
+.news-post-img {
+  position: relative;
+  overflow: hidden;
+  height: 200px; /* Kích thước cố định cho hình ảnh */
+}
+
+.news-post-img img.img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cắt ảnh để vừa khung */
+}
+
+/* Định dạng thẻ 'New' */
+.news-new-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #6a8e21;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  z-index: 10;
+}
+
+/* Định dạng ngày tháng */
+.news-post-date {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Định dạng nội dung bài viết */
+.news-post-content {
+  flex: 1; /* Chiếm không gian còn lại */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px; /* Khoảng cách bên trong */
+}
+
+/* Định dạng tiêu đề bài viết */
+.news-post-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Định dạng đoạn văn bản */
+.news-post-text {
+  flex: 1; /* Chiếm không gian còn lại */
+  margin-bottom: 15px; /* Khoảng cách dưới đoạn văn bản */
+}
+
+/* Định dạng liên kết đọc thêm */
+.news-readmore {
+  text-decoration: none;
+  color: #5e666e;
+  display: inline-flex;
+  align-items: center; /* Căn giữa nội dung liên kết */
+  font-weight: bold; /* Đậm chữ */
+}
+
+/* Định dạng đường kẻ */
+.news-divider {
+  margin: 10px 0; /* Khoảng cách trên và dưới đường kẻ */
+}
+
+/* Cải thiện bố cục khi hover */
+.news-post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------------------- */
+.faq-item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.faq-header {
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.faq-header h5 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.faq-question {
+  margin: 0;
+  text-align: left;
+  border-bottom: 1px solid transparent;
+  flex-grow: 1;
+}
+
+.faq-toggle {
+  text-align: right;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-header:hover {
+  border-color: black;
+}
+
+.faq-body {
+  padding: 1.25rem;
+  border-top: 1px solid black;
+}
+.faq-item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.faq-header {
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.faq-header h5 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.faq-question {
+  margin: 0;
+  text-align: left;
+  border-bottom: 1px solid transparent;
+  flex-grow: 1;
+}
+
+.faq-toggle {
+  text-align: right;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: black; /* Đặt màu chữ cho nút để phù hợp với màu mũi tên */
+}
+
+.faq-header:hover {
+  border-color: black;
+}
+
+.faq-body {
+  padding: 1.25rem;
+  border-top: 1px solid black;
+}
+
+.faq-toggle .fa-chevron-down {
+  color: black; /* Đặt màu cho mũi tên */
+}
+
+/* --------------------------------------- */
+/* .about */
+/* Our Story Section */
+#our-story {
+  padding: 60px 0;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9; /* Màu nền để phân biệt hộp thông tin */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng di chuột */
+  margin-bottom: 40px; /* Khoảng cách giữa các phần tử */
+  
+}
+
+/* Điều chỉnh kích thước hình ảnh để chiều ngang bé hơn */
+/* Điều chỉnh kích thước hình ảnh với chiều ngang nhỏ hơn */
+.info-image {
+  width: 60px; /* Giảm kích thước chiều rộng của hình ảnh */
+  height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
+  margin-right: 15px; /* Khoảng cách giữa hình ảnh và văn bản */
+  border-radius: 8px; /* Bo góc cho hình ảnh */
+  
+}
+
+
+.info-text h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.info-text p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.about-logo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* -------------------------------------------------- */
+/* view all  */
+.view-all-container {
+  text-align: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add some space above the button */
+}
+
+.view-all-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(203, 219, 203);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: rgb(203, 219, 203);
+}

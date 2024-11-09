@@ -1,0 +1,38 @@
+.blog-pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.blog-pagination ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.blog-pagination li {
+    display: inline;
+}
+
+.blog-pagination a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #28a745; /* Màu xanh lá cây */
+    border: 1px solid #28a745; /* Màu xanh lá cây */
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.blog-pagination li.active a {
+    background-color: #28a745; /* Màu xanh lá cây */
+    color: #fff;
+    border-color: #28a745; /* Màu xanh lá cây */
+}
+
+.blog-pagination a:hover {
+    background-color: #218838; /* Màu xanh lá cây đậm hơn */
+    color: #fff;
+    border-color: #218838; /* Màu xanh lá cây đậm hơn */
+}
